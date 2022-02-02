@@ -8,7 +8,7 @@ def result():
     data = request.form.get('data')
     print("Received data: ", data)
 
-    return "oi3"
+    return help(data)
 
 @app.route('/get', methods=['GET'])
 def get():
