@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def result():
 
-    data = request.form['data']
+    data = request.form.get('data')
     print("Received data: ", data)
 
     return data
