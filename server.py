@@ -10,6 +10,12 @@ def result():
 
     return data
 
+@app.route('/get', methods=['GET'])
+def get():
+
+    print("oi")
+
+    return "oi2"
 
 if __name__ == '__main__':
     app.run(debug=True)
